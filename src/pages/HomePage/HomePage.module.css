@@ -1,0 +1,43 @@
+.container{
+                background-image: url(../../images/image/Rectangle.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: 50% 50%;
+                min-height: 100vh;
+                min-width: 100vw;
+                color:#E9E9E9;
+                
+}
+
+.title{
+    /* display: flex; */
+    padding-top: 142px;
+    margin-bottom: 20px;
+    font-weight: 300;
+        font-size: 52px;
+        line-height: 66px;
+    text-align: center;
+        /* justify-content: center; */
+}
+
+.text{
+    /* display: flex; */
+    text-align: center;
+    font-size: 22px;
+    line-height: 37px;
+        margin-bottom: 24px;
+    /* justify-content: center; */
+
+}
+.containerButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.button {
+    width: 156px;
+    height: 45px;
+}
+
+

@@ -1,0 +1,92 @@
+* {
+  font-family: 'Open Sans' !important;
+}
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E5E5E5;
+
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Open Sans'
+    monospace;
+  font-style: normal;
+    
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+img,
+strike,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+output,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+a{
+  text-decoration:none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}

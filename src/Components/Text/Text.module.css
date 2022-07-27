@@ -1,0 +1,15 @@
+
+.text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color:#333333;
+    text-align: center;;
+}
+
+.textWhite{
+    composes: text;
+    color: #ffffff;
+    margin-bottom: 24px;
+    text-align: start;
+}
