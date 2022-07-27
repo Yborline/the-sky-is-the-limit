@@ -1,0 +1,21 @@
+.container{
+    background-color: #333333;
+    height: 109px;
+    padding: 20px 52px 20px;
+}
+
+.listIcon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.item:not(:last-child){
+    margin-right: 25px;
+
+}
+
+.text{
+    text-align: center;
+    color:#FFFFFF;
+}

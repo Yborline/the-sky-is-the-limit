@@ -1,10 +1,10 @@
-.container{
+.container {
     background-color: #28A745;
 
 }
 
-.divText{
-        padding: 40px 30px;
+.divText {
+    padding: 40px 30px;
 }
 
 .img {
@@ -13,16 +13,16 @@
     max-width: 100%;
 }
 
-.preface{
-    margin-bottom: 8px ;
+.preface {
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
-.title{
+
+.title {
     margin-bottom: 24px;
     /* font-weight: 300;
     font-size: 38px;
     line-height: 48px; */
 }
-

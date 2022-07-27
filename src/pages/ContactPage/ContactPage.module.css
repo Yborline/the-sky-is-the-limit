@@ -1,0 +1,17 @@
+
+.img{
+    width: 100%;
+}
+
+.text{
+    padding: 40px 20px;
+
+}
+.title {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: #333333;
+
+}

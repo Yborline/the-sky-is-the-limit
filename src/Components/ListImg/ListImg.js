@@ -12,6 +12,7 @@ import largeImg5 from "../../images/image/Cases2x(5).jpg";
 import largeImg6 from "../../images/image/Cases2x(6).jpg";
 import ImgLi from "../ImgLi/ImgLi";
 import Modal from "../../Components/Modal/Modal";
+import s from "./ListImg.module.css";
 
 import { useState } from "react";
 
@@ -51,7 +52,7 @@ function ListImg() {
   };
   return (
     <>
-      <ul>
+      <ul className={s.list}>
         <ImgLi open={() => openModal(img1)} img={img1} alt="asdad" />
         <ImgLi open={() => openModal(img2)} img={img2} alt="asdad" />
         <ImgLi open={() => openModal(img3)} img={img3} alt="asdad" />

@@ -1,0 +1,27 @@
+.container {
+    padding: 100px 20px;
+}
+
+.item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.list{
+    text-align: center;
+}
+.name{
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 23px;
+    line-height: 29px;
+}
+
+.profession{
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.img{
+    width: 100%;
+}

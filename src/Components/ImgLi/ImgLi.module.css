@@ -1,0 +1,8 @@
+.li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.img{
+    width: 280px;
+    height: 176px;
+}

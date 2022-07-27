@@ -1,0 +1,59 @@
+.error{
+    color:red;
+}
+
+
+
+.input{
+    min-width: 280px;
+    min-height: 40px;
+    border: 1px solid #F5F5F5;
+
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.list{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.item{
+max-width: 280px;
+
+}
+.item:last-child{
+margin-bottom: 40px;
+}
+
+.item:not(:last-child) {
+margin-bottom: 16px;
+
+}
+
+.label{
+    color: #808080;
+}
+
+.button{
+width: 280px;
+height: 42px;
+background-color: #28A745;
+color:#FFFFFF;
+border-radius: 5px;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.errorEmail{
+    display: flex;
+    align-items: center;
+}
+
+.svg{
+    margin-right: 5px;
+}
