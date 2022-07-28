@@ -1,5 +1,7 @@
 .container {
     background-color: #28A745;
+    /*  */
+    padding-top: 101.5px;
 
 }
 
@@ -7,10 +9,13 @@
     padding: 40px 30px;
 }
 
-.img {
-    padding-top: 142px;
-    background-size: cover;
-    max-width: 100%;
+.divImg{
+    min-width: 320px;
+    min-height: 247px;
+            background-image: url(../../images/image/LookSixPeople.jpg);
+                background-position: 50% 50%;
+            
+                background-size: cover;
 }
 
 .preface {
@@ -26,3 +31,39 @@
     font-size: 38px;
     line-height: 48px; */
 }
+
+   @media (min-width: 768px) {
+.divText {
+            padding: 40px 53px 40px 32px;
+        }
+
+.divImg {
+        min-width: 368px;
+        min-height: 589px;
+
+}
+
+.container {
+display: flex;
+padding-top: 63px;
+
+}
+
+    
+   }
+
+    @media (min-width: 1360px) {
+        .divImg {
+                min-height: 460px;
+                min-width: 670px;
+            }
+        .container {
+/*  */
+                padding-top: 55px;
+        
+            }
+        .divText {
+            padding: 80px 64px 80px 20px;
+        }
+
+        }

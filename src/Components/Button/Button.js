@@ -1,7 +1,11 @@
 import s from "./Button.module.css";
 
-function Button({ text }) {
-  return <button className={s.button}>{text}</button>;
+function Button({ border, text }) {
+  return border === true ? (
+    <button className={s.buttonBorder}> {text}</button>
+  ) : (
+    <button className={s.button}> {text}</button>
+  );
 }
 
 export default Button;

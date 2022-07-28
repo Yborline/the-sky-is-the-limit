@@ -46,7 +46,7 @@ function ContactForm() {
                   <label htmlFor="name" className={s.label}>
                     Enter your name
                     {!values.name.length || errors.name ? (
-                      <span> *</span>
+                      <span> </span>
                     ) : (
                       <></>
                     )}
@@ -59,7 +59,7 @@ function ContactForm() {
                   type="name"
                   name="name"
                   placeholder="Enter your name"
-                  maxLength="30"
+                  maxLength="100"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.name}
@@ -75,7 +75,7 @@ function ContactForm() {
                   <label htmlFor="email" className={s.label}>
                     Enter email*
                     {!values.email.length || errors.email ? (
-                      <span> *</span>
+                      <span> </span>
                     ) : (
                       <></>
                     )}
@@ -87,7 +87,7 @@ function ContactForm() {
                   type="email"
                   name="email"
                   placeholder="Enter email*"
-                  maxLength="30"
+                  maxLength="63"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email}

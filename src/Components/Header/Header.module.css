@@ -1,28 +1,55 @@
-
-
 .header {
     padding: auto 20px;
     display: flex;
 
-/* text-align: center; */
+    /* text-align: center; */
     height: 102px;
     position: fixed;
     /* top: 0; */
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-        align-items: center;
-        width: 100%;
-        color:#FFFFFF;
+    align-items: center;
+    width: 100%;
+    color: #FFFFFF;
+    /* overflow:scroll; */
+    background-color: #333333;
+    opacity: 0.8;
 
 
 }
 
-.logo{
+
+
+.logo {
     margin-top: 21px;
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.svg {
+    fill: #28A745;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.logo:hover .svg {
+    fill: rgb(0, 234, 51)
+}
+
+.logo:hover .logoGreen {
+    color: rgb(0, 234, 51)
+}
+
+.logoGreen {
+    color: #28A745;
 
 }
 
@@ -30,18 +57,177 @@
     display: flex;
     justify-content: center;
     font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
 
 }
 
 
-.link{
+.link {
     color: #FFFFFF;
 }
 
+
+
+.item {
+    position: relative;
+}
+
+.activeHome,
+.activeAbout,
+.activeCases,
+.activeBlog,
+.activeContact {
+    color: #ffffff
+}
+
+.link:hover {
+    color: #28A745;
+}
+
+
+.activeHome::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    width: 49px;
+    opacity: 1;
+}
+
+.activeAbout::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    width: 49px;
+}
+
+.activeCases::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    width: 49px;
+}
+
+.activeBlog::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    width: 40px;
+}
+
+.activeContact::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    width: 65px;
+}
+
+.activeLink {
+    color: #ffffff;
+}
+
+
 .item:not(:last-child) {
-            margin-right: 12px;   
-             }
+    margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 63px;
+    }
+
+    .logo {
+        margin-top: 20px;
+        margin-left: 32px;
+        margin-bottom: 0px;
+        font-size: 35px;
+    }
+
+    .logoGreen {
+        margin-right: 5px;
+    }
+
+    .menu {
+        margin-top: 28px;
+        margin-right: 32px;
+        font-size: 18px;
+
+    }
+
+    .item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .activeHome::after {
+        top: 30px;
+    }
+
+    .activeAbout::after {
+        top: 30px;
+    }
+
+    .activeCases::after {
+        top: 30px;
+    }
+
+    .activeBlog::after {
+        top: 30px;
+    }
+
+    .activeContact::after {
+        top: 30px;
+    }
+
+}
+
+@media (min-width: 1360px) {
+    .header {
+        height: 55px;
+
+    }
+
+    .logo {
+        margin-top: 12px;
+        margin-left: 28px;
+    }
+
+    .menu {
+        margin-top: 20px;
+        margin-right: 28px;
+
+    }
+
+    .item:not(:last-child) {
+        margin-right: 40px;
+    }
+}

@@ -2,6 +2,7 @@
 
     background: #0284D0;
 
+    padding-top: 102px ;
 }
 
 .divText{
@@ -11,9 +12,13 @@
 }
 
 .img {
-
+ background-image: url(../../images/image/Blog.jpg);
+ min-width: 320px ;
+ min-height: 247px;
+background-repeat:no-repeat;
     background-size: cover;
-    max-width: 100%;
+    background-position: 50% 50%;
+    /* max-width: 100%; */
 }
 
 .button{
@@ -23,4 +28,38 @@ background-color: #0284D0;
 border: 1px solid #FFFFFF;
 color: #FFFFFF;
 border-radius: 5px;
+}
+.button:hover{
+background-color:#FFFFFF; 
+color: #0284D0;
+
+}
+
+@media (min-width:768px) {
+    .conntainer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 63px;
+    }   
+    .img {
+        min-width: 368px;
+        min-height: 493px;
+        }
+    .divText {
+        padding: 40px 53px 40px 32px;
+    }
+}
+
+@media (min-width:1360px) {
+        .conntainer {
+            padding-top: 55px;
+            }
+        .img {
+            min-width: 670px;
+            min-height: 460px;
+        }
+        .divText {
+            padding: 80px 56px 80px 28px;
+    }
+
 }

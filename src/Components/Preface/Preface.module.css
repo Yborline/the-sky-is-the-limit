@@ -13,3 +13,11 @@ margin-bottom: 20px;
     margin-bottom: 8px;
     text-align: start;
 }
+
+@media (min-width: 768px) {
+    .preface {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 33px;
+    }
+}

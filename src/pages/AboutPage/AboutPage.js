@@ -8,7 +8,13 @@ import s from "./AboutPage.module.css";
 function AboutPage() {
   return (
     <div className={s.container}>
-      <img className={s.img} src={image} alt="Шестеро людей смотрят на тебя" />
+      <div className={s.divImg}>
+        {/* <img
+          className={s.img}
+          src={image}
+          alt="Шестеро людей смотрят на тебя"
+        /> */}
+      </div>
       <div className={s.divText}>
         <Preface color="white" text="What you are looking for" />
         <Title color="text" text="We provide bespoke solutions" />
@@ -19,7 +25,7 @@ function AboutPage() {
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?"
         />
-        <Button text="Read More" />
+        <Button border={true} text="Read More" />
       </div>
     </div>
   );

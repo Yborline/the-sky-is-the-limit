@@ -13,3 +13,11 @@
     margin-bottom: 24px;
     text-align: start;
 }
+
+@media (min-width: 768px) {
+    .text {
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

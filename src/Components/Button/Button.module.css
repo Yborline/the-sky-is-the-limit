@@ -3,6 +3,21 @@
     width: 156px;
     height: 45px;
     color:#FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 0px;
     border-radius: 5px;
+}
+
+.buttonBorder {
+    composes: button;
+border: 1px solid #FFFFFF;
+}
+
+
+
+
+
+.button:hover,
+.button:focus{
+    background-color: rgba(33, 215, 84, 0.6);
+
 }

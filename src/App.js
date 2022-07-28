@@ -6,11 +6,13 @@ import BlogPage from "./pages/BlogPage/BlogPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+
+import s from "./App.module.css";
 import "./App.module.css";
 
 function App() {
   return (
-    <div>
+    <div className={s.container}>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

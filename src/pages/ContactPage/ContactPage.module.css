@@ -1,10 +1,17 @@
 
+
+
 .img{
-    width: 100%;
-}
+        min-width: 320px;
+         min-height: 247px;
+        background-image: url(../../images/image/Contact.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+    }
 
 .text{
     padding: 40px 20px;
+
 
 }
 .title {
@@ -13,5 +20,33 @@
     font-size: 38px;
     line-height: 48px;
     color: #333333;
+
+}
+
+@media (min-width:768px) {
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
+    .img {
+        min-width: 368px;
+        min-height: 354px;
+
+        }
+    .text{
+    padding: 40px 44px 40px 32px ;
+}
+    
+}
+
+@media (min-width:1360px) {
+    .img {
+        min-width: 670px;
+        min-height: 454px;
+        }
+    .text{
+        padding: 80px 50px 80px 28px ;
+}
 
 }

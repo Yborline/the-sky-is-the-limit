@@ -1,0 +1,38 @@
+
+
+.listIcon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.item:not(:last-child) {
+    margin-right: 25px;
+
+}
+/* .item{
+    color: #ffffff;
+} */
+
+.svgWhite:hover{
+    transform: scale(1.15);
+    transition: 500ms;
+}
+
+.svg {
+fill: #ffffff;
+}
+
+.svgWhite {
+    fill: #ffffff;
+}
+.svg:hover {
+    transform: scale(1.15);
+    transition: 500ms;
+    fill: #28a745;
+}
+
+.text {
+    text-align: center;
+    color: #FFFFFF;
+}

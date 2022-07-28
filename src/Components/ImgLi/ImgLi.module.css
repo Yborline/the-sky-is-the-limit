@@ -6,3 +6,17 @@
     width: 280px;
     height: 176px;
 }
+
+@media (min-width:768px) {
+.img {
+        width: 223px;
+        height: 148px;
+    }
+}
+
+@media (min-width:1360px) {
+    .img {
+        width: 421px;
+        height: 282px;
+    }
+}

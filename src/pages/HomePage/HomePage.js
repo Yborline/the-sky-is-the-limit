@@ -4,10 +4,7 @@ import s from "./HomePage.module.css";
 function HomePage() {
   return (
     <div className={s.container}>
-      <h2 className={s.title}>
-        The Sky Is
-        <br /> The Limit
-      </h2>
+      <h2 className={s.title}>The Sky Is The Limit</h2>
       <p className={s.text}>We provide world class financial assistance</p>
       <div className={s.containerButton}>
         <Button text="Read More" />
