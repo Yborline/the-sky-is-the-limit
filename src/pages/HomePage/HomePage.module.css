@@ -9,29 +9,28 @@
                 display: flex;
                  flex-direction: column;
                 justify-content: center;
-                /* padding: 0px 20px 0px 20px; */
+    text-align: center;
 
                 
 }
 
 .title{
-    /* display: flex; */
-    /* padding-top: 142px; */
+
     margin-bottom: 20px;
     font-weight: 300;
         font-size: 52px;
         line-height: 66px;
-    text-align: center;
-        /* justify-content: center; */
+   
+
 }
 
 .text{
-    /* display: flex; */
+
     text-align: center;
     font-size: 22px;
     line-height: 37px;
         margin-bottom: 24px;
-    /* justify-content: center; */
+
 
 }
 .containerButton {

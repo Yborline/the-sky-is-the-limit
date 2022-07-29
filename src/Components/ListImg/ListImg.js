@@ -19,6 +19,7 @@ import { useState } from "react";
 function ListImg() {
   const [showModal, setShowModal] = useState(false);
   const [img, setImage] = useState("");
+  const [alt, setAlt] = useState("");
   //   const [largeImage, setLargeImage] = useState("");
   const image = (x) => {
     switch (x) {
@@ -46,22 +47,45 @@ function ListImg() {
     setImage("");
   };
 
-  const openModal = (img) => {
+  const openModal = (img, string) => {
     setShowModal((showModal) => !showModal);
     setImage(img);
+    setAlt(string);
   };
   return (
     <>
       <ul className={s.list}>
-        <ImgLi open={() => openModal(img1)} img={img1} alt="asdad" />
-        <ImgLi open={() => openModal(img2)} img={img2} alt="asdad" />
-        <ImgLi open={() => openModal(img3)} img={img3} alt="asdad" />
-        <ImgLi open={() => openModal(img4)} img={img4} alt="asdad" />
-        <ImgLi open={() => openModal(img5)} img={img5} alt="asdad" />
-        <ImgLi open={() => openModal(img6)} img={img6} alt="asdad" />
+        <ImgLi
+          open={() =>
+            openModal(img1, "Eight people at the table discussing something")
+          }
+          img={img1}
+          alt="Eight people at the table discussing something"
+        />
+        <ImgLi
+          open={() => openModal(img2, "Notes, calculations")}
+          img={img2}
+          alt="Notes, calculations"
+        />
+        <ImgLi
+          open={() => openModal(img3, "People shaking hands")}
+          img={img3}
+          alt="People shaking hands"
+        />
+        <ImgLi open={() => openModal(img4, "Team")} img={img4} alt="Team" />
+        <ImgLi
+          open={() => openModal(img5, "Work on a laptop")}
+          img={img5}
+          alt="Work on a laptop"
+        />
+        <ImgLi
+          open={() => openModal(img6, "Three large glass houses")}
+          img={img6}
+          alt="Three large glass houses"
+        />
       </ul>
       {showModal && (
-        <Modal onClose={closeModal} alt="123" largeImage={image(img)} />
+        <Modal onClose={closeModal} alt={alt} largeImage={image(img)} />
       )}
     </>
   );

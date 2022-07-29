@@ -39,6 +39,7 @@ function ContactForm() {
               handleSubmit();
             }}
             // onSubmit={handleSubmit}
+            data-netlify="true"
           >
             <ul className={s.list}>
               <li className={s.item}>

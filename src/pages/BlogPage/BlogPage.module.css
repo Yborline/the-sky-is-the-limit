@@ -3,6 +3,7 @@
     background: #0284D0;
 
     padding-top: 102px ;
+    height: 100vh;
 }
 
 .divText{
@@ -18,7 +19,6 @@
 background-repeat:no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    /* max-width: 100%; */
 }
 
 .button{

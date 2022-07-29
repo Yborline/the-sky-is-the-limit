@@ -2,36 +2,25 @@ import s from './Header.module.css';
 import { Link, NavLink } from 'react-router-dom';
 import {useEffect} from 'react';
 import sprite from '../../images/icons/sprites.svg'
+import { useState } from "react";
 
 function Header() {
-//     document.addEventListener('resize', () => {
-//   if (window.scrollY > 200 && heder.style.color != 'red') {
-//     header.style.color = 'red'
-//   } else if (header.style.color == 'red') header.style.color = 'auto'
-// })
+    const [scroll, setScroll] = useState(0)
+    const [width, setWidth] = useState(0)
     
-//       useEffect(() => {
-//     const handleScroll = (event) => {
-//       console.log("window.scrollY", window.scrollY);
-//       console.log(event);
-//     };
 
-    // window.addEventListener("scroll", handleScroll);
 
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-    
-        const handleScroll = (event) => {
-
-            console.log(event);
-
-            const scroll =()=>{
-                      console.log("window.scrollY", window.scrollY);
-            }
-            window.addEventListener("scroll", scroll);
+    useEffect(() => {
+                  setWidth(window.screen.width)
+          const handleScroll = (event) => {
+              setScroll(window.scrollY)   
+          }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
+  }, [scroll]);
+    
     
     const setActiveHome = ({ isActive }) => (isActive ? s.activeHome : s.link)
     const setActiveAbout = ({ isActive }) => (isActive ? s.activeAbout : s.link)
@@ -40,9 +29,10 @@ function Header() {
     const setActiveContact = ({ isActive }) =>(isActive ? s.activeContact : s.link)
     
     return (
-        
-        <div>
-        <header onScroll={handleScroll()}  className={s.header}>
+
+        <div >
+            <header 
+                className={width > 767 ?( scroll > 69 ? s.headerMobile  : s.header ): (scroll > 119 ? s.headerMobile  : s.header )  }>
                 <div className={s.divLogo}>
                     <Link to='/'>
                     <h1 className={s.logo}>

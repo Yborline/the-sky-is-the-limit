@@ -9,9 +9,33 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1200;
+    display: flex;
+    
 }
 
 .Modal {
     max-width: calc(100vw - 48px);
     max-height: calc(100vh - 24px);
 }
+
+
+.text{
+    color: white;
+}
+
+.close{
+    color: white;
+    cursor: pointer;
+display: flex;
+
+    font-size: large;
+}
+
+.close:hover{
+    color: red;
+
+}
+
+
+
+    

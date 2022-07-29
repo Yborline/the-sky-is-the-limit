@@ -1,27 +1,30 @@
 import Header from "./Components/Header/Header";
-import HomePage from "./pages/HomePage/HomePage";
-import AboutPage from "./pages/AboutPage/AboutPage";
-import CasesPage from "./pages/CasesPage/CasesPage";
-import BlogPage from "./pages/BlogPage/BlogPage";
-import TeamPage from "./pages/TeamPage/TeamPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Spinner from "./Components/Spinner/Spinner";
+import { Suspense, lazy } from "react";
 
 import s from "./App.module.css";
 import "./App.module.css";
 
 function App() {
+  const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+  const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
+  const CasesPage = lazy(() => import("./pages/CasesPage/CasesPage"));
+  const BlogPage = lazy(() => import("./pages/BlogPage/BlogPage"));
+  const ContactPage = lazy(() => import("./pages/ContactPage/ContactPage"));
+
   return (
     <div className={s.container}>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/cases" element={<CasesPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
+      <Suspense fallback={<Spinner />}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/cases" element={<CasesPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }

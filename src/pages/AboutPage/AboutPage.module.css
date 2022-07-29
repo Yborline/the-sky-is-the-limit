@@ -1,7 +1,7 @@
 .container {
     background-color: #28A745;
-    /*  */
     padding-top: 101.5px;
+    height: 100vh;
 
 }
 
@@ -27,9 +27,7 @@
 
 .title {
     margin-bottom: 24px;
-    /* font-weight: 300;
-    font-size: 38px;
-    line-height: 48px; */
+
 }
 
    @media (min-width: 768px) {
@@ -58,7 +56,7 @@ padding-top: 63px;
                 min-width: 670px;
             }
         .container {
-/*  */
+
                 padding-top: 55px;
         
             }

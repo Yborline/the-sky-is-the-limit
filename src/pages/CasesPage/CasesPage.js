@@ -4,7 +4,7 @@ import Preface from "../../Components/Preface/Preface";
 import ListImg from "../../Components/ListImg/ListImg";
 import s from "./CasesPage.module.css";
 
-function CasesPage() {
+const CasesPage = () => {
   return (
     <div className={s.container}>
       <Preface text="This is what we do" />
@@ -16,6 +16,6 @@ function CasesPage() {
       <ListImg />
     </div>
   );
-}
+};
 
 export default CasesPage;

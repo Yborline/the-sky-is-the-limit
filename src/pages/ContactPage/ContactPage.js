@@ -1,10 +1,12 @@
 import ContactForm from "../../Components/ContactForm/ContactForm";
 import Footer from "../../Components/Footer/Footer";
 import s from "./ContactPage.module.css";
+import TeamPage from "../TeamPage/TeamPage";
 
-function ContactPage() {
+const ContactPage = () => {
   return (
     <>
+      <TeamPage />
       <div className={s.container}>
         <div className={s.img}></div>
         <div className={s.text}>
@@ -15,6 +17,6 @@ function ContactPage() {
       <Footer />
     </>
   );
-}
+};
 
 export default ContactPage;
