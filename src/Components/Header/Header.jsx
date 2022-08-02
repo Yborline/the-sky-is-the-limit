@@ -78,7 +78,7 @@ activeClass={s.blog}
     to="section4"
     spy={true}
     smooth={true}
-    offset={width>1359?-54 :(width>769? -62: -102)}
+    offset={width>1359?-53 :(width>769? -62: -102)}
     duration={500}
                     >Blog</Link>
                                         <Link
