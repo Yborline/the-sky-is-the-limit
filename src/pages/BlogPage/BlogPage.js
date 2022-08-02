@@ -5,8 +5,8 @@ import s from "./BlogPage.module.css";
 
 function BlogPage({ id }) {
   return (
-    <div className={s.conntainer}>
-      <div id={id} className={s.img}></div>
+    <div id={id} className={s.conntainer}>
+      <div className={s.img}></div>
       <div className={s.divText}>
         <Preface color="white" text="April 16 2020" />
         <Title color="white" text="Blog Post One" />
