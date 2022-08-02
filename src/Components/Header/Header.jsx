@@ -35,7 +35,7 @@ function Header() {
             <header 
                 className={width > 767 ?( scroll > 69 ? s.headerMobile  : s.header ): (scroll > 119 ? s.headerMobile  : s.header )  }>
                 <div className={s.divLogo}>
-                    <Link to='/'>
+                    <Link to='section1' smooth={true}>
                     <h1 className={s.logo}>
                         <svg className={s.svg} width="40" height="31">
                             <use href={`${sprite}#vectorbook`}></use>

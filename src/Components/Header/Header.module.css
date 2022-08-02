@@ -45,6 +45,7 @@
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .svg {
