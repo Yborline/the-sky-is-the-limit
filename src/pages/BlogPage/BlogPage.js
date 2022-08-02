@@ -3,9 +3,9 @@ import Title from "../../Components/Title/Title";
 import Text from "../../Components/Text/Text";
 import s from "./BlogPage.module.css";
 
-const BlogPage = () => {
+function BlogPage({id}) {
   return (
-    <div className={s.conntainer}>
+    <div id={id} className={s.conntainer}>
       <div className={s.img}></div>
       <div className={s.divText}>
         <Preface color="white" text="April 16 2020" />
@@ -20,6 +20,6 @@ const BlogPage = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BlogPage;

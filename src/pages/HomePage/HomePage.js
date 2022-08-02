@@ -2,9 +2,9 @@ import Button from "../../Components/Button/Button";
 import s from "./HomePage.module.css";
 import { Link } from "react-router-dom";
 
-const HomePage = () => {
+function HomePage({ id }) {
   return (
-    <div className={s.container}>
+    <div id={id} className={s.container}>
       <h2 className={s.title}>The Sky Is The Limit</h2>
       <p className={s.text}>We provide world class financial assistance</p>
       <div className={s.containerButton}>
@@ -14,6 +14,6 @@ const HomePage = () => {
       </div>
     </div>
   );
-};
+}
 
 export default HomePage;

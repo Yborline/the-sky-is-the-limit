@@ -6,7 +6,7 @@ import img1 from "../../images/image/Team3.jpg";
 import img2 from "../../images/image/Team2.jpg";
 import img3 from "../../images/image/Team1.jpg";
 import s from "./TeamPage.module.css";
-const TeamPage =() =>{
+function TeamPage() {
   return (
     <div className={s.container}>
       <Preface text="Who we are" />

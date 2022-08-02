@@ -1,5 +1,5 @@
 .container {
-    padding: 142px 20px;
+    padding: 40px 20px;
 }
 
 .item:not(:last-child){
@@ -76,11 +76,16 @@ text-align: center;
 }
         .container {
     
-            padding: 106px 32px 40px;
+            padding: 40px 32px 40px;
         }
 }
 @media (min-width: 1360px) {
         .list {
     grid-column-gap: 20px;
+        }
+        
+        .container {
+    
+            padding:80px 28px 80px;
         }
 }

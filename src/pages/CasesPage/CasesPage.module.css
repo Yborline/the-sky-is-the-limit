@@ -1,18 +1,18 @@
 .container{
 
-    padding: 142px 20px 40px;
+    padding: 40px 20px 40px;
 }
 
 @media (min-width: 768px) {
     .container {
 
-            padding: 106px 32px 40px;
+            padding: 40px 32px 40px;
         }
     
 }
 @media (min-width: 1360px) {
     .container {
 
-            padding: 135px 28px 80px;
+            padding: 80px 28px 80px;
         }
 }

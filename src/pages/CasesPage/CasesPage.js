@@ -4,9 +4,9 @@ import Preface from "../../Components/Preface/Preface";
 import ListImg from "../../Components/ListImg/ListImg";
 import s from "./CasesPage.module.css";
 
-const CasesPage = () => {
+function CasesPage({id}) {
   return (
-    <div className={s.container}>
+    <div id={id} className={s.container}>
       <Preface text="This is what we do" />
       <Title text="Business Cases" />
       <Text
@@ -16,6 +16,6 @@ const CasesPage = () => {
       <ListImg />
     </div>
   );
-};
+}
 
 export default CasesPage;

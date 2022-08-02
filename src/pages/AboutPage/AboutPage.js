@@ -5,9 +5,9 @@ import Preface from "../../Components/Preface/Preface";
 import s from "./AboutPage.module.css";
 import { Link } from "react-router-dom";
 
-const AboutPage = () => {
+function AboutPage({ id }) {
   return (
-    <div className={s.container}>
+    <div id={id} className={s.container}>
       <div className={s.divImg}></div>
       <div className={s.divText}>
         <Preface color="white" text="What you are looking for" />
@@ -25,6 +25,6 @@ const AboutPage = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AboutPage;

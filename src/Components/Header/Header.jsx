@@ -1,5 +1,5 @@
 import s from './Header.module.css';
-import { Link, NavLink } from 'react-router-dom';
+import * as Scroll from 'react-scroll';
 import {useEffect} from 'react';
 import sprite from '../../images/icons/sprites.svg'
 import { useState } from "react";
@@ -21,13 +21,14 @@ function Header() {
     };
   }, [scroll]);
     
+    let Link   = Scroll.Link;
     
-    const setActiveHome = ({ isActive }) => (isActive ? s.activeHome : s.link)
-    const setActiveAbout = ({ isActive }) => (isActive ? s.activeAbout : s.link)
-    const setActiveCases = ({ isActive }) => (isActive ? s.activeCases : s.link)
-    const setActiveBlog = ({ isActive }) => (isActive ? s.activeBlog : s.link)
-    const setActiveContact = ({ isActive }) =>(isActive ? s.activeContact : s.link)
     
+    const home = s.item + ' ' + s.activeHome;
+    const about = s.item + ' ' + s.activeAbout;
+    const cases = s.item + ' ' + s.activeCases;
+    const blog = s.item + ' ' + s.activeBlog;
+    const contact = s.item + ' ' + s.activeContact;
     return (
 
         <div >
@@ -43,13 +44,60 @@ function Header() {
                         </h1>
                     </Link>
             </div >
-                    <ul className={s.menu}>
-                        <li className={s.item}><NavLink   className={setActiveHome}  to="/">Home</NavLink></li>
-                        <li className={s.item}><NavLink className={setActiveAbout} to="/about">About</NavLink></li>
-                        <li className={s.item}><NavLink className={setActiveCases} to="/cases">Cases</NavLink></li>
-                        <li className={s.item}><NavLink className={setActiveBlog} to="/blog">Blog</NavLink></li>
-                        <li className={s.item}><NavLink className={setActiveContact} to="/contact">Contact</NavLink></li>
-                    </ul>
+                <ul className={s.menu}>
+                    <Link
+                        className={home}
+    activeClass={s.home}
+    to="section1"
+    spy={true}
+    smooth={true}
+    offset={width>1360?-55 :(width>769? -62: -102)}
+    duration={500}
+                    >Home</Link>
+                                        <Link
+                        className={about}
+       activeClass={s.about}
+    to="section2"
+    spy={true}
+    smooth={true}
+    offset={width>1360?-55 :(width>769? -62: -102)}
+    duration={500}
+                    >About</Link>
+                                        <Link
+                        className={cases}
+       activeClass={s.cases}
+    to="section3"
+    spy={true}
+    smooth={true}
+    offset={width>1360?-55 :(width>769? -62: -102)}
+    duration={500}
+                    >Cases</Link>
+                                        <Link
+                        className={blog}
+activeClass={s.blog}
+    to="section4"
+    spy={true}
+    smooth={true}
+    offset={width>1360?-55 :(width>769? -62: -102)}
+    duration={500}
+                    >Blog</Link>
+                                        <Link
+                        className={contact}
+    activeClass={s.contact}
+    to="section5"
+    spy={true}
+    smooth={true}
+    offset={width>1360?-55 :(width>769? -62: -102)}
+    duration={500}
+                    >Contact</Link>
+                    
+                        {/* <li className={home}>Home</li>
+                        <li className={about}>About</li>
+                        <li className={cases}>Cases</li>
+                        <li className={blog}>Blog</li>
+                        <li className={contact}>Contact</li> */}
+                {/* s.item     */}
+                </ul>
             </header>
             </div>
 

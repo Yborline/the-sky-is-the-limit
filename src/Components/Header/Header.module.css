@@ -2,18 +2,15 @@
     padding: auto 20px;
     display: flex;
 
-    /* text-align: center; */
+
     height: 102px;
     position: fixed;
-    /* top: 0; */
-    /* justify-content: center; */
+
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: #FFFFFF;
-    /* overflow:scroll; */
-    background-color: #333333;
-    /* opacity: 0.8; */
+
     z-index: 10;
 
 
@@ -22,16 +19,14 @@
     padding: auto 20px;
     display: flex;
 
-    /* text-align: center; */
     height: 102px;
     position: fixed;
-    /* top: 0; */
-    /* justify-content: center; */
+
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: #FFFFFF;
-    /* overflow:scroll; */
+
     background-color: #333333;
     opacity: 0.8;
     z-index: 10;
@@ -81,6 +76,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    position: relative;
 
 
 }
@@ -93,7 +89,7 @@
 
 
 .item {
-    position: relative;
+    /* position: relative; */
 }
 
 .activeHome,
@@ -104,12 +100,28 @@
     color: #ffffff
 }
 
-.link:hover {
-    color: #28A745;
+.item {
+        cursor: pointer;
+}
+
+.item:not(:last-child) {
+    margin-right: 12px;
+}
+.home::after{
+    content: "";
+        height: 4px;
+        background-color: #06c332;
+        border-radius: 2px;
+        z-index: 2;
+        position: absolute;
+        top: 23px;
+        left: 0px;
+        width: 46px;
+        opacity: 1;
 }
 
 
-.activeHome::after {
+.activeHome:hover::after {
     content: "";
     height: 4px;
     background-color: #06c332;
@@ -118,11 +130,12 @@
     position: absolute;
     top: 23px;
     left: 0px;
-    width: 49px;
+    width: 46px;
     opacity: 1;
+
 }
 
-.activeAbout::after {
+.about::after {
     content: "";
     height: 4px;
     background-color: #06c332;
@@ -130,11 +143,12 @@
     z-index: 2;
     position: absolute;
     top: 23px;
-    left: 0px;
+    left: 55px;
     width: 49px;
+
 }
 
-.activeCases::after {
+.activeAbout:hover::after {
     content: "";
     height: 4px;
     background-color: #06c332;
@@ -142,11 +156,12 @@
     z-index: 2;
     position: absolute;
     top: 23px;
-    left: 0px;
+    left: 55px;
     width: 49px;
+
 }
 
-.activeBlog::after {
+.cases::after {
     content: "";
     height: 4px;
     background-color: #06c332;
@@ -154,11 +169,37 @@
     z-index: 2;
     position: absolute;
     top: 23px;
-    left: 0px;
+    left: 112px;
+    width: 49px;
+
+}
+
+.activeCases:hover::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 112px;
+    width: 49px;
+
+}
+.blog::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 166px;
     width: 40px;
+
 }
 
-.activeContact::after {
+.activeBlog:hover::after{
     content: "";
     height: 4px;
     background-color: #06c332;
@@ -166,8 +207,34 @@
     z-index: 2;
     position: absolute;
     top: 23px;
-    left: 0px;
-    width: 65px;
+    left: 166px;
+    width: 40px;
+
+}
+.contact::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 212px;
+    width: 62px;
+
+}
+
+.activeContact:hover::after {
+    content: "";
+    height: 4px;
+    background-color: #06c332;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 23px;
+    left: 212px;
+    width: 62px;
+
 }
 
 .activeLink {
@@ -180,6 +247,7 @@
 }
 
 @media (min-width: 768px) {
+    
 
     .header {
         flex-direction: row;
@@ -212,30 +280,73 @@
         font-size: 18px;
 
     }
+    .item:not(:last-child) {
+    margin-right: 20px;
+
+}
 
     .item:not(:last-child) {
         margin-right: 20px;
     }
 
-    .activeHome::after {
+
+
+
+.activeHome:hover::after {
         top: 30px;
     }
 
-    .activeAbout::after {
+.activeAbout:hover::after {
+    left: 70px;
+        top: 30px;
+        width: 52px;
+        
+    }
+
+.activeCases:hover::after {
+    left: 141px;
+        top: 30px;
+        width: 52px;
+    }
+
+.activeBlog:hover::after {
+    left: 210px;
         top: 30px;
     }
 
-    .activeCases::after {
+.activeContact:hover::after {
+    left: 268px;
         top: 30px;
+        width: 66px;
     }
+.home::after {
+    top: 30px;
+}
 
-    .activeBlog::after {
-        top: 30px;
-    }
+.about::after {
+    left: 70px;
+    top: 30px;
+    width: 52px;
 
-    .activeContact::after {
-        top: 30px;
-    }
+}
+
+.cases::after {
+    left: 141px;
+    top: 30px;
+    width: 52px;
+}
+
+.blog::after {
+    left: 210px;
+    top: 30px;
+}
+
+.contact::after {
+    left: 268px;
+    top: 30px;
+    width: 66px;
+}
+
 
 }
 
@@ -259,6 +370,40 @@
         margin-right: 28px;
 
     }
+
+        .activeAbout:hover::after {
+            left: 90px;
+        }
+
+         .activeCases:hover::after {
+            left: 181px;
+         }
+        .activeBlog:hover::after {
+            left: 270px;
+        }
+        
+        .activeContact:hover::after {
+            left: 348px;
+        }
+
+        .about::after {
+            left: 90px;
+        }
+
+        .cases::after {
+            left: 181px;
+         }
+        .blog::after {
+            left: 270px;
+        }
+        
+        .contact::after {
+            left: 348px;
+        }
+        .item:not(:last-child) {
+    margin-right: 40px;
+
+}
 
     .item:not(:last-child) {
         margin-right: 40px;

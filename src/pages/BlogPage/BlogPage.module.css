@@ -2,8 +2,6 @@
 
     background: #0284D0;
 
-    padding-top: 102px ;
-    height: 100vh;
 }
 
 .divText{
@@ -39,7 +37,6 @@ color: #0284D0;
     .conntainer {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 63px;
     }   
     .img {
         min-width: 368px;
@@ -51,9 +48,7 @@ color: #0284D0;
 }
 
 @media (min-width:1360px) {
-        .conntainer {
-            padding-top: 55px;
-            }
+
         .img {
             min-width: 670px;
             min-height: 460px;

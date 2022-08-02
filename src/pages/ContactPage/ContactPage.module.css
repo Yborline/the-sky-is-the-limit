@@ -39,17 +39,12 @@
     .text{
     padding: 40px 44px 40px 32px ;
 }
-                .container {
 
-                }
     
 }
 
 @media (min-width:1360px) {
-        .container {
 
-
-            }
     .img {
         min-width: 670px;
         min-height: 454px;

@@ -1,7 +1,5 @@
 .container {
     background-color: #28A745;
-    padding-top: 101.5px;
-    height: 100vh;
 
 }
 
@@ -43,7 +41,6 @@
 
 .container {
 display: flex;
-padding-top: 63px;
 
 }
 
@@ -55,11 +52,7 @@ padding-top: 63px;
                 min-height: 460px;
                 min-width: 670px;
             }
-        .container {
 
-                padding-top: 55px;
-        
-            }
         .divText {
             padding: 80px 64px 80px 20px;
         }

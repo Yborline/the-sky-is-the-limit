@@ -11,14 +11,11 @@ function ContactForm() {
         initialValues={{ name: "", email: "" }}
         validateOnBlur
         validationSchema={validationSchema}
-        // , { setSubmitting }
-        onSubmit={(values) => {
+        onSubmit={(values, formikProps) => {
           const { name, email } = values;
+
           console.log(name, email);
-          //   setTimeout(() => {
-          //     alert(JSON.stringify(values, null, 2));
-          //     setSubmitting(false);
-          //   }, 400);
+          formikProps.resetForm("");
         }}
       >
         {({
@@ -38,7 +35,7 @@ function ContactForm() {
               e.preventDefault();
               handleSubmit();
             }}
-            // onSubmit={handleSubmit}
+            name={values.email}
             data-netlify="true"
           >
             <ul className={s.list}>
@@ -120,7 +117,6 @@ function ContactForm() {
                     touched.constructor === Object)
                 }
               >
-                {/* disabled={isSubmitting} */}
                 Submit
               </button>
             </div>
