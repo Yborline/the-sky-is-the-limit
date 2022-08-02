@@ -3,10 +3,10 @@ import Title from "../../Components/Title/Title";
 import Text from "../../Components/Text/Text";
 import s from "./BlogPage.module.css";
 
-function BlogPage({id}) {
+function BlogPage({ id }) {
   return (
-    <div id={id} className={s.conntainer}>
-      <div className={s.img}></div>
+    <div className={s.conntainer}>
+      <div id={id} className={s.img}></div>
       <div className={s.divText}>
         <Preface color="white" text="April 16 2020" />
         <Title color="white" text="Blog Post One" />

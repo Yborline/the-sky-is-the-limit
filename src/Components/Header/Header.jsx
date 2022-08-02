@@ -51,7 +51,7 @@ function Header() {
     to="section1"
     spy={true}
     smooth={true}
-    offset={width>1360?-55 :(width>769? -62: -102)}
+    offset={width>1359?-55 :(width>769? -62: -102)}
     duration={500}
                     >Home</Link>
                                         <Link
@@ -60,7 +60,7 @@ function Header() {
     to="section2"
     spy={true}
     smooth={true}
-    offset={width>1360?-55 :(width>769? -62: -102)}
+    offset={width>1359?-55 :(width>769? -62: -102)}
     duration={500}
                     >About</Link>
                                         <Link
@@ -69,7 +69,7 @@ function Header() {
     to="section3"
     spy={true}
     smooth={true}
-    offset={width>1360?-55 :(width>769? -62: -102)}
+    offset={width>1359?-55 :(width>769? -62: -102)}
     duration={500}
                     >Cases</Link>
                                         <Link
@@ -78,7 +78,7 @@ activeClass={s.blog}
     to="section4"
     spy={true}
     smooth={true}
-    offset={width>1360?-55 :(width>769? -62: -102)}
+    offset={width>1359?-54 :(width>769? -62: -102)}
     duration={500}
                     >Blog</Link>
                                         <Link
@@ -87,7 +87,7 @@ activeClass={s.blog}
     to="section5"
     spy={true}
     smooth={true}
-    offset={width>1360?-55 :(width>769? -62: -102)}
+    offset={width>1359?-55 :(width>769? -62: -102)}
     duration={500}
                     >Contact</Link>
                     
